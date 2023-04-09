@@ -1,0 +1,29 @@
+{
+  "name": "vue",
+  "private": true,
+  "version": "0.0.0",
+  "main": "dist-electron/main/index.js", 
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "^3.2.47"
+  },
+  "debug": {
+    "env": {
+      "VITE_DEV_SERVER_URL": "http://127.0.0.1:3344/"
+    }
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^4.1.0",
+    "electron": "^23.2.1",
+    "electron-builder": "^23.6.0",
+    "typescript": "^4.9.3",
+    "vite": "^4.2.0",
+    "vite-plugin-electron": "^0.11.1",
+    "vite-plugin-electron-renderer": "^0.13.14",
+    "vue-tsc": "^1.2.0"
+  }
+}
